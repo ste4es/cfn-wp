@@ -4,6 +4,5 @@
     "DBPassword" : "TestDBRootPassword",
     "DBRootPassword" : "TestDBRootPassword",
     "DBUser" : "TestDBuser",    
-    "KeyName" : "TestEC2KeyName"
   }
 }
