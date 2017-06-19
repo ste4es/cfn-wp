@@ -1,5 +1,6 @@
 {
   "Parameters" : {
+    "KeyName" : "kp2-ger",
     "DBName" : "TestWordPressDB",
     "DBPassword" : "TestDBRootPassword",
     "DBRootPassword" : "TestDBRootPassword",
