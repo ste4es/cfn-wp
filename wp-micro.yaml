@@ -111,7 +111,7 @@ Resources:
               httpd: []
           sources:
             "/var/www/html": http://wordpress.org/latest.tar.gz
-            "/var/www/html/wordpress/wp-content/plugins/wordpress-importer": 
+            "/var/www/html/wordpress/wp-content/plugins": 
               https://downloads.wordpress.org/plugin/wordpress-importer.0.6.3.zip
           services:
             sysvinit:
