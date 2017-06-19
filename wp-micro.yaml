@@ -73,6 +73,8 @@ Mappings:
       AMI: ami-f9dd458a
     eu-west-2:
       AMI: ami-886369ec
+    eu-central-1:
+      AMI: ami-b968bad6
 Resources:
   WebServerSecurityGroup:
     Type: AWS::EC2::SecurityGroup
