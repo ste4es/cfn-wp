@@ -103,6 +103,7 @@ Resources:
           packages:
             yum: # this is OK for dev, need specific versions for prod
               php: []
+              php-xml: []
               php-mysql: []
               mysql: []
               mysql-server: []
