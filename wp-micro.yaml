@@ -158,7 +158,7 @@ Resources:
                         chmod 755 wp-content/uploads
                         # this is the scary part - shift everything up a dir so we lose the "wordpress" from our URL.
                         # must come last after the other configuration
-                        mv * ...
+                        mv * ..
               cwd: "/var/www/html/wordpress"
     Properties:
       ImageId:
