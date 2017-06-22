@@ -149,7 +149,16 @@ Resources:
                         sed -i "s/'database_name_here'/${DBName}/g" wp-config.php
                         sed -i "s/'username_here'/${DBUser}/g" wp-config.php
                         sed -i "s/'password_here'/'${DBPassword}'/g" wp-config.php
-                        mv * ..
+              cwd: "/var/www/html/wordpress"
+            04_last_wp_hacks:
+              command:
+                !Sub |
+                        mkdir wp-content/uploads
+                        chown apache:apache wp-content/uploads
+                        chmod 755 wp-content/uploads
+                        # this is the scary part - shift everything up a dir so we lose the "wordpress" from our URL.
+                        # must come last after the other configuration
+                        mv * ...
               cwd: "/var/www/html/wordpress"
     Properties:
       ImageId:
